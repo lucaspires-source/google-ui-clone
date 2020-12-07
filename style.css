@@ -9,6 +9,14 @@
     font-family: Arial, sans-serif;
 }
 
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 /*Header*/
 .menu{
     height: 48px;
@@ -74,9 +82,11 @@ border-radius: 50%;
 
 .content{
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 56px 8px 0;
     align-items: center;
+
 
 }
 
@@ -132,4 +142,13 @@ border-radius: 50%;
 
 .footer__links a:not(:first-child) {
     margin-left: 27px;
+}
+
+@media(min-width:768px){
+    .content{
+        padding-top: 10px;
+    }
+    .content__logo{
+        height: 150px;
+    }
 }
